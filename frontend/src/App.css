@@ -1,0 +1,111 @@
+/* Center the entire chat box in the middle of the screen */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0b141a; /* Dark WhatsApp background */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px; /* Limits the width to keep it centered */
+  height: 90vh;
+  background-color: #0b141a;
+  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); /* WhatsApp Doodle Wallpaper */
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #3b4a54;
+  border-right: 1px solid #3b4a54;
+}
+
+.chat-header {
+  padding: 10px 16px;
+  background-color: #202c33;
+  color: #e9edef;
+  display: flex;
+  align-items: center;
+}
+
+.messages-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Positioning */
+.message-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+/* YOUR messages (Right Side of Center) */
+.message-wrapper.me {
+  justify-content: flex-end;
+}
+
+/* THEIR messages (Left Side of Center) */
+.message-wrapper.them {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 65%;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14.2px;
+  line-height: 19px;
+  position: relative;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+}
+
+.me .message-bubble {
+  background-color: #005c4b; /* WhatsApp Dark Green */
+  color: #e9edef;
+  border-top-right-radius: 0;
+}
+
+.them .message-bubble {
+  background-color: #202c33; /* WhatsApp Dark Grey */
+  color: #e9edef;
+  border-top-left-radius: 0;
+}
+
+.sender-name {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #34b7f1; /* Sky blue for names */
+  margin-bottom: 2px;
+}
+
+/* Bottom Input Bar */
+.input-container {
+  padding: 10px;
+  background-color: #202c33;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  background-color: #2a3942;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.send-btn {
+  background: none;
+  border: none;
+  color: #8696a0;
+  cursor: pointer;
+}
