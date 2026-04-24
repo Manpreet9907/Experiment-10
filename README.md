@@ -76,11 +76,13 @@ npm start
 
 ###  Chat Interface (1.1)
 
-![Screenshot 1](screenshots/1.1.png)
+<img width="482" height="718" alt="image" src="https://github.com/user-attachments/assets/221113ab-6598-41fd-9fc0-888c269a98c1" />
+
 
 ### Message Exchange (1.2)
 
-![Screenshot 2](screenshots/1,2.png)
+<img width="438" height="712" alt="image" src="https://github.com/user-attachments/assets/179150ce-0306-4b92-99d3-abe2f6c55145" />
+
 
 > Make sure your screenshot files are named exactly:
 > `1.1.png` and `1.2.png` inside the `screenshots` folder
